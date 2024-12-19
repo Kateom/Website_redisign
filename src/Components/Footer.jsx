@@ -24,16 +24,16 @@ const Footer = () => {
           <h2 className="footer-title">Quick Links</h2>
           <ul className="quick-links">
             <li>
-              <a href="/">Home</a>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <a href="/about">About Us</a>
+              <NavLink to="/about">About Us</NavLink>
             </li>
             <li>
-              <a href="/products">Products</a>
+            <NavLink to="/products">Products</NavLink>
             </li>
             <li>
-              <a href="/contact">Contact Us</a>
+            <NavLink to="/contact">Contact Us</NavLink>
             </li>
           </ul>
         </div>
