@@ -1,0 +1,140 @@
+.footer-container {
+    background-color: #131313;
+    color: white;
+    padding: 50px 50px;
+    display: flex;
+    justify-content: space-between;
+   
+    gap: 20px;
+    
+}
+
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    max-width: 25%;
+    margin-right: 20px;
+}
+
+.content{
+    margin:30px 0px;
+    line-height: 25px;
+    word-spacing: 5px;
+    font-size: 18px;
+}
+
+
+.footer-middle {
+    display: flex; 
+    gap: 50px; 
+}
+
+
+.footer-center,
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px; 
+}
+
+.footer-title {
+    
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 2px solid grey;
+    padding-bottom: 5px;
+    
+}
+
+
+.quick-links {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links li {
+    margin: 25px 0;
+}
+
+.quick-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.quick-links li a:hover {
+    color: lightgrey;
+    text-decoration: underline;
+}
+
+
+.footer-right p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.footer-right strong {
+    color: lightgrey;
+}
+
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.copyrigth-container{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        
+    }
+   
+
+    .footer-middle {
+        flex-direction: column; 
+        justify-content: flex-start;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        max-width: 100%;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+    
+    .copyrigth-container{
+        height: 30px;
+        font-size: 15px;
+        text-align: center;
+        padding: 25px;
+    }
+}

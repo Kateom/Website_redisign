@@ -1,0 +1,154 @@
+
+.contact-us-container {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    margin: 50px 20px;
+  }
+  
+  
+  .form-section {
+    max-width: 500px;
+  }
+  
+  .get-in-touch {
+    color: green;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-input,
+  .form-textarea {
+    margin: 15px 0px;
+    padding: 15px;
+    width: 600px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    font-size: 17px;
+
+  }
+  
+  .form-textarea {
+    resize: none;
+  }
+  
+  .form-button {
+    padding: 10px 15px;
+    max-width: 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+  }
+  
+  
+  .map-section {
+    display: flex;
+    align-items: center;
+    width: 600px;
+
+  }
+
+  
+.contact-info-container {
+    margin: 50px 20px; 
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+ 
+  .info-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 450px;
+    height: 350px;
+    transition: transform 0.3s;
+  }
+  
+  .info-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  
+  .icon img {
+   
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .info-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  
+  .info-card p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  @media (max-width: 480px) {
+
+    .contact-us-container{
+        flex-direction: column;
+    }
+    .form-input,
+    .form-textarea {
+     max-width: 300px;
+      padding: 10px;
+      font-size: 12px;
+    }
+  
+    .get-in-touch {
+      font-size: 18px;
+      
+    }
+  
+    .form-button {
+      font-size: 12px;
+      padding: 6px 10px;
+    }
+
+    .map-section{
+        width: 300px;
+    }
+  
+    .info-card {
+      padding: 15px;
+      max-width: 100%;
+      box-shadow: none; 
+    }
+  
+    .icon img {
+      width: 40px; 
+      height: 40px;
+    }
+  
+    .info-card h3 {
+      font-size: 16px;
+    }
+  
+    .info-card p {
+      font-size: 12px;
+    }
+  }
+  

@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", Sans-serif;
+}
+
+nav{
+   background-color: black;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+    
+}
+
+nav.scrolled{
+    background-color: #efeded;
+}
+
+
+
+.logo{
+    color: rgb(61, 188, 217);
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.navlink{
+    display: flex;
+    justify-content: end; 
+    gap: 50px;
+    font-size: 20px; 
+    list-style-type: none;
+    margin-right: 50px;
+    
+    
+}
+
+li  > a{
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+}
+li > a:hover{
+    color: rgb(40, 211, 86); 
+    text-decoration: underline;
+}
+
+
+.hamburger {
+    display: none;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    z-index:1001;
+  }
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+     
+     .navlink {
+        
+        flex-direction: column;
+        position: fixed;
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%; 
+        background-color: rgba(245, 242, 242, 0.9); 
+        justify-content: center; 
+        align-items: center; 
+        gap: 30px;
+        z-index: 1000; 
+        text-align: center; 
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    .navlink.active {
+        display: flex;
+        transform: translateY(0);
+        opacity: 1;
+        
+    }
+    .navlink > li > a{
+        color: black;
+    }
+    .navlink > li > a:hover{
+        color: rgb(40, 211, 86);
+        text-decoration: underline;
+    }
+
+    .hamburger{
+        display: block;
+        color: rgb(61, 188, 217);
+    }
+}
+
+
